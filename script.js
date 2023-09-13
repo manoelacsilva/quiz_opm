@@ -193,10 +193,10 @@ const questions = [
         ]
     },
     {
-        question: '11) No episódio 4, quem consegue achar antibiótico para o Raul?',
+        question: '11) No episódio 4, quem consegue antibiótico para o Raul?',
         answers: [
             {text: 'Lia encontra em um dos armários da casa', correct: false},
-            {text: 'Lucas oferece o que ele encontrou em uma de suas espedições', correct: false},
+            {text: 'Lucas oferece o remédio que ele encontrou em uma de suas expedições', correct: false},
             {text: 'Henrique tinha um frasco consigo', correct: true},
             {text: 'Eles não conseguem nenhum antibiótico', correct: false}
         ]
