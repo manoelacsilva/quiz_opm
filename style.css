@@ -87,7 +87,7 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -126,6 +126,14 @@ footer {
     margin-top: 8px;
 }
 
+.img-opm {
+    background-position: center;
+    max-width: 100%; /* A imagem nunca será maior que o tamanho do seu contêiner */
+    height: auto; /* A altura se ajustará automaticamente proporcionalmente à largura */
+    margin: 0 auto;
+}
+
+
 @media (max-width: 820px) {
     body {
         background-position: center;
@@ -138,12 +146,12 @@ footer {
     }
 
     .question {
-        font-size: 12px;
+        font-size: 16px;
         margin-bottom: 0px;
     }
 
     .button {
-        font-size: 10px;
+        font-size: 12px;
         height: 22px;
     }
 

@@ -4,6 +4,7 @@ const $questionsContainer = document.querySelector('.questions-container');
 const $answersContainer = document.querySelector('.answers-container');
 const $questionText = document.querySelector('.question');
 const $nextQuestionButton = document.querySelector('.next-question');
+const $imgOpm = document.querySelector('.img-opm');
 
 $startGameButton.addEventListener('click', startGame);
 $nextQuestionButton.addEventListener('click', displayNextQuestion);
@@ -12,6 +13,7 @@ let currentQuestionIndex = 0;
 let totalCorrect = 0;
 
 function startGame() {
+    $imgOpm.classList.add('hide')
     $wordQuiz.classList.add('hide')
     $startGameButton.classList.add('hide')
     $questionsContainer.classList.remove('hide')
