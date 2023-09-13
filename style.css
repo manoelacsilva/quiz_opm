@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-image: url(./image/fundo-opm-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.questions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.answers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.next-question {
+    margin-top: 32px;
+}
+
+.button {
+    background-color: #e1e1e6;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+    box-shadow: 0 0 2px 2px;
+}
+
+.button:not(:disabled):hover {
+    filter: brightness(0.8);
+}
+
+.answer:disabled {
+    cursor: not-allowed;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    line-height: normal;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+.quiz {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    margin-bottom: 22px;
+}
+
+.controls-container {
+    display: grid;
+}
+
+.num-question-um {
+    margin-top: 16px;
+}
+
+.final-message {
+    font-size: 20px;
+    text-align: center;
+}
+
+.final-message span {
+    display: block;
+    margin-top: 8px;
+}
+
+@media (max-width: 820px) {
+    body {
+        background-position: center;
+    }
+
+    footer {
+        font-size: 8px;
+        line-height: 15px;
+        padding: 5px;
+    }
+
+    .question {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .button {
+        font-size: 10px;
+        height: 22px;
+    }
+
+    .answers-container {
+        gap: 6px;
+    }
+
+    .final-message {
+        font-size: 12px;
+    }
+
+    .final-message span {
+        margin-top: 4px;
+    }
+}
