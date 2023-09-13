@@ -152,15 +152,16 @@ footer {
 
     .button {
         font-size: 12px;
-        height: 22px;
+        height: auto;
+        padding: 4px 32px;
     }
 
     .answers-container {
-        gap: 6px;
+        gap: 8px;
     }
 
     .final-message {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .final-message span {
